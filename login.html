@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="full-screen" content="Yes">
+    <title>Ayodhya Ram Devasthanam</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+    
+</head>
+<body>
+    <header>
+    <!--nav bar it shouldn't change-->
+
+    <nav class="nav_container ">
+     
+        <!--Audio element for background music-->
+        <audio class="background-music" autoplay loop>
+        <source src="Ram audio.mp3" type="audio/mpeg">
+        <!--Your browser does not support the audio element.-->
+        </audio>
+        <!--Top banner image -->
+        <img class="banner_image" src="images/secbar.jpg" alt="Banner image">
+        <!--Nav bar-->
+        <div>
+            <ul>
+                <li><a href="newhtml.html" class="hover_link">Home</a></li>
+                <li><a href="about.html" class="hover_link">About</a></li>
+                <li><a href="ayodhya_dham.html" class="hover_link">Ayodhya Dham</a></li>
+                <li><a href="swamivariseva.html" class="hover_link">Swamyvari Seva</a></li> 
+                <li><a href="things_todo.html" class="hover_link">Things to do in Ayodhya</a></li> 
+                <li><a href="localtemples.html" class="hover_link">Local Temples</a></li>
+                <li><a href="others.html" class="hover_link">Others</a></li>
+                <li><a href="login.html" class="login">Login</a></li>
+            </ul>
+        </div>  
+    </nav>
+
+        <div class="bg_image">
+            <div class="login-container">
+                <h2>Login</h2>
+                <form>
+                    <div class="input-group">
+                        <label for="username">Username</label>
+                        <input type="text" id="username" name="username" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                    <button type="submit">Login</button>
+                </form>
+            </div>
+        </div>
+    </body>
+    </html>

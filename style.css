@@ -1,0 +1,1246 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #fdf1f4;
+    text-decoration-color:#233443;
+    overflow: auto;
+}
+
+/* Main banner image */
+.banner_image {
+    width: 100%;
+    height: 55%;
+    padding:0;
+    border-radius: 0px 0px 30px 30px;
+    display: block;
+
+}
+/* Nav bar*/
+.nav_container {
+    background-color:#639;
+    color:#fdf1f4;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1rem;
+    padding-top:0;
+    height: 120px;
+    
+   
+}
+nav ul li {
+    list-style: none;
+    display: inline;
+    margin:0px 20px;
+    text-decoration: none;
+    justify-content: space-evenly;
+    font-weight: 700px;
+    cursor: pointer;
+}
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    justify-content: space-evenly;
+    font-weight: 550;
+    padding: 0;
+}
+.login {
+    /* it shouldn't change*/
+    padding:12px 10px; 
+}
+.login:hover{
+    transition: 0.2s ease-out;
+    color:rgb(248, 132, 0);
+}
+  
+.hover_link:hover{
+    transition: 0.2s ease-out;
+    color:rgb(248, 132, 0);
+}
+
+/*header
+header section
+image sliders*/
+
+.slider {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 20px;
+    position: relative;
+    margin-top: 10px;
+    border: 2px solid #ffffff;
+   
+}
+
+.slides {
+    display: flex;
+    width: 100%;
+    height:60vh;
+    animation: slide 8s infinite;
+}
+
+.slide {
+    position: relative;
+    width: 100%;
+    flex-shrink: 0; 
+}
+.slide::before{
+    content: "";
+    position: absolute;
+    top:0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.45);
+}
+.slide img {
+    width: 100%;
+    height: auto;
+    display: block; 
+}
+
+.text {
+    position: absolute;
+    bottom: 30px;
+    margin-left: 30px;
+    color: white;
+    border-radius: 5px;
+    line-height: 0.5;
+    font-size: 1.5em;
+}
+
+
+
+@keyframes slide {
+    0%, 25% {
+        transform: translateX(0);
+    }
+    26%, 50% {
+        transform: translateX(-100%);
+    }
+    51%, 75% {
+        transform: translateX(-200%);
+    }
+    76%, 100% {
+        transform: translateX(-300%);
+    }
+}
+
+
+
+/*Aarathi darshan timings*/
+.ramashrotram{
+    text-align: center;
+    font-size: 1rem;
+    margin-top: 40px;
+    line-height: 1;
+}
+.ramashrotram h3{
+    text-align: center;
+    font-size: 1rem;
+    margin-top: 0;
+    
+}
+.shloka_explanation{
+    width:800px;
+    height:600px;
+    margin: 60px auto;
+    margin-top: 40px;
+    background:#EBF5FB;
+    position: relative;
+    border-radius: 10px ;
+
+}
+.shloka_explanation h1{
+    margin:0;
+    padding: 0;
+    padding-top:30px;
+    font-size: 14px;
+    line-height: 1.7;
+    text-align: center;
+    font-family: Roboto, sans-serif;
+    font-weight: 1000;
+
+}
+.shloka_explanation h2{
+    margin:0;
+    padding: 0;
+    font-size: 14px;
+    line-height: 1.7;
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #5c5c5c;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%;
+    text-align: center;
+}
+.shloka_explanation p{
+    margin:0;
+    padding: 0;
+    font-size: 14px;
+    line-height: 1.7;
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+
+}
+
+.headers{
+    display: block;
+    width: 800px; 
+    height:190px;
+    float:center;
+    top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px ;
+    position: relative;
+    border-color: rgb(255, 255, 255);
+   
+}
+.header_img{
+    display: block;
+    margin-top: 10px;
+    width: 800px; 
+    height:400px;
+    float:center;
+    top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px ;
+    position: relative;
+    border-color: rgb(255, 255, 255);
+
+}
+
+
+.note{
+    color:#584901;
+    text-align: center;
+}
+
+.heading{
+    margin-top: 50px;
+    color:#da086a;
+    text-align: center;
+}
+
+.Darshan_aarthi_timings{
+    color:rgb(248, 132, 0);
+    font-weight: bolder;
+    font-size: large;
+    text-align: center;
+}
+.ID_Proof{
+    font-size: large;
+    text-align: center
+
+}
+.images_ayodhya{
+    background-color: rgba(0, 0, 0, 0.667);
+}
+.img_ramlalla{
+    width: 100%;
+    height: 100vh;
+    mix-blend-mode: multiply;
+    padding-bottom:0;
+    display: grid;
+
+}
+ 
+/*About page*/
+
+.header_image{
+    display:grid;
+    width:100%;
+    height:100vh;
+    text-align: center;
+    background-image: linear-gradient(0deg,rgba(251, 200, 133, 0.655),rgba(251, 200, 133, 0.655)),url(images/rama.jpg) ;
+    background-size: cover;
+    background-position: center;
+
+    margin-top: 10px;
+    border-radius: 10px 10px 0px 0px;
+
+
+    
+}
+.header_image {
+    display: inline-block;
+    padding-top: 30px;
+    
+}
+.main_heading{
+    margin-top: 2px;
+    text-align: center;
+    color: rgb(248, 132, 0);
+    display: inline-block;
+    border-bottom: 3px solid rgb(211, 132, 0);
+}
+.history-of-ayodhya{
+    display: block;
+    width: 500px; 
+    height:500px;
+    float:right;
+    margin-top: 0px;
+    margin-left: 20px;
+    border-radius: 30px ;
+    border: 5px solid;
+    position: right;
+    margin-right: 30px;
+    border-color: rgb(250, 175, 0);
+}
+.history h2{
+    color:rgb(255, 255, 255);
+    text-align: right;
+    margin-left: 30px;
+    margin-right: 30px;
+    
+}
+.history p{
+    text-align:right;
+    color: rgb(0, 0, 0);
+    position:absolute;
+    margin-left: 30px;
+    margin-right: 600px;
+    margin-top: 10px;
+    font-weight: bolder;
+    
+}
+.babar_history h2 {
+    color:rgb(255, 255, 255);
+    text-align: right;
+    margin-top: 135px;
+    margin-left: 30px;
+    position: start;
+}
+.babar_history p{
+    color:#000000;
+    margin-left: 30px;
+    margin-right: 600px;
+    margin-top: 30px;
+    font-weight: bolder;
+}
+.idols_inside_masid h2{
+    color:rgb(255, 255, 255);
+    text-align: right;
+    margin-top: 20px;
+    margin-left: 30px;
+    position: start;
+    font-weight: bolder;
+}
+.idols_inside_masid p{
+    color:#000000;
+    margin-left: 30px;
+    margin-right: 600px;
+    margin-top: 5px;
+    font-weight: bolder;
+
+}
+.raghunandana{
+    color:rgb(255, 255, 255);
+    text-align: right;
+    margin-top: 20px;
+    margin-left: 30px;
+    position: start;
+    font-weight: bolder;
+}
+.raghunandana p{
+    color:#000000;
+    margin-left: 30px;
+    margin-right: 600px;
+    margin-top: 30px;
+    font-weight: bold;
+}
+
+
+
+/*ayodhya_dham page*/
+.mandir_details{
+    color:rgb(0, 0, 0);
+    top:0px;
+    text-align: center;
+    background:#ffffff;
+    position: absolute;
+    width:100%;
+    height:60vh;
+    display: grid;
+    position: relative;
+    flex-shrink: 0; 
+    border-radius: 20px;
+
+    margin-top: 10px;
+    border: 2px solid #ffffff;
+}
+.mandir_details img{
+    width:100%;
+    height:60vh;
+    border-radius: 20px;
+
+}
+.mandir_details::before{
+    content: "";
+    position: absolute;
+    border-radius: 20px;
+    top:0;
+    width: 100%;
+    height: 60vh;
+    background: rgba(0, 0, 0, 0.489);
+}
+.mandir{
+    width:100%;
+    height:50vh;
+    border-radius: 10px;
+}
+
+.mandir_details h1{
+    color:#ffffff;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    position: absolute;
+    font-size: xx-large;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    bottom: 40px;
+    margin-left: 100px;
+    color: white;
+    border-radius: 5px;
+    
+    font-size: 2.2em;
+    justify-content: justify;
+
+
+}
+.ayodhya__dham{
+    position: absolute;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    bottom: 2px;
+    margin-left: 100px;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1.5em;
+   
+
+}
+.mandir_details h2{
+    top:30px;
+    text-align: center;
+    margin-right: 80px;
+    color:#ff6900;
+    font-size: 2em;
+    margin-top: 50px;
+    line-height: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+.mandir_details h3{
+    top:0;
+    text-align: center;
+    margin-right: 80px;
+    line-height: 0;
+    font-size: 1.6em;
+    color:#da086a;
+    
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+.region{
+    font-size: 1.4em;
+    color:#000000;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+.mandir_details p{
+    text-align: center;
+    margin-right: 80px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position:relative;
+    margin-left: 30px;
+    margin-top: 0px;
+    
+}
+.sevas{
+    line-height: 5;
+    color: #ffffff;
+    width:1000px;
+    height:200px;
+    text-align: center;
+    background:rgb(160, 0, 0);
+    position: absolute;
+    margin-left:200px;
+
+    margin-top: 10px;
+    border: 2px solid #ffffff;
+
+}
+.sevas h1{
+    text-align: center;
+    text-decoration: underline;
+    line-height: 2.5;
+    font-family: 'Times New Roman', Times, serif
+}
+.sevas img{
+    width: 300px;
+    height: 400px;
+    justify-content: space-evenly;
+    border-radius: 5px;
+}
+.Sugam_Darshan{
+    line-height: 2.5;
+    color: #ffffff;
+    width:200px;
+    height:50px;
+    text-align: center;
+    background:#ff6900;
+    position: absolute;
+    margin-left:300px;
+    bottom: 60px;
+    border-radius: 5px;
+}
+.Aarti_Booking{
+    line-height: 2.5;
+    color: #ffffff;
+    width:200px;
+    height:50px;
+    text-align: center;
+    background:#ff6900;
+    position: absolute;
+    margin-left:610px;
+    bottom: 60px;
+    border-radius: 5px;
+
+}
+.Divya_Abhishekam{
+    line-height: 2.5;
+    color: #ffffff;
+    width:200px;
+    height:50px;
+    text-align: center;
+    background:#ff6900;
+    position: absolute;
+    margin-left:910px;
+    bottom: 60px;
+    border-radius: 5px;
+
+}
+.how_to_reach_ayodhya{
+    color:#000000;
+    font-family: 'Times New Roman', Times, serif;
+}
+.how_to_reach_ayodhya h2{
+   top:500px;
+    text-align: start;
+    margin-left: 100px;
+    line-height: 0.1;
+    
+}
+.rootmap{
+    text-align: center;
+}
+.rootmap img{
+    text-align: center;
+    margin-top:550px;
+    border-radius: 10px;
+    border: 1px solid rgb(0, 0, 0);
+}
+.by_air{
+    line-height: 2;
+    color: #000000;
+    top:1750px;
+    width:1000px;
+    height:200px;
+    background:rgb(210, 202, 202);
+    position: absolute;
+    margin-left:100px;
+
+}
+.by_air h4{
+    text-align: left;
+    padding-left:50px;
+    align-items: left;
+}
+.by_air p{
+    text-align: left;
+    padding-left:50px;
+    align-items: left;
+    font-size: small;
+    font-weight: 12px;
+    color:#363232;
+
+}
+.by_air ul,li{
+    text-align: left;
+    padding-left:25px;
+    align-items: left;
+    color:#363232; 
+}
+.by_train{
+    line-height: 2;
+    color: #000000;
+    top:2000px;
+    width:1000px;
+    height:240px;
+    background:rgb(210, 202, 202);
+    position: absolute;
+    margin-left:100px;
+
+}
+.by_train h4{
+    text-align: left;
+    padding-left:50px;
+    align-items: left;
+
+}
+.by_train p{
+    text-align: left;
+    padding-left:50px;
+    align-items: left;
+    font-size: small;
+    font-weight: 12px;
+    color:#363232;
+}
+.by_train ul,li{
+    text-align: left;
+    padding-left:25px;
+    align-items: left; 
+}
+.by_road{
+    line-height: 2;
+    color: #000000;
+    top:2290px;
+    width:1000px;
+    height:400px;
+    background:rgb(210, 202, 202);
+    position: absolute;
+    margin-left:100px;
+
+}
+.by_road h4{
+    text-align: left;
+    padding-left:50px;
+    align-items: left;
+
+}
+.by_road p{
+    text-align: left;
+    padding-left:50px;
+    align-items: left;
+    font-size: small;
+    font-weight: 12px;
+    color:#363232;
+}
+.by_road ul,li{
+    text-align: left;
+    padding-left:25px;
+    align-items: left; 
+}
+.ayodhya_thecity { 
+    color:rgb(0, 0, 0);
+    top:0px;
+    text-align: center;
+    background:#ffffff;
+    position: absolute;
+    width:100%;
+    height:60vh;
+    display: grid;
+    position: relative;
+    flex-shrink: 0; 
+    border-radius: 20px;
+
+    margin-top: 10px;
+    border: 2px solid #ffffff; 
+
+}
+.ayodhya_thecity img{
+    width:100%;
+    height:60vh;
+    border-radius: 20px;
+
+}
+.ayodhya_thecity::before{
+    content: "";
+    position: absolute;
+    border-radius: 20px;
+    top:0;
+    width: 100%;
+    height: 60vh;
+    background: rgba(0, 0, 0, 0.489);
+
+}
+.things_todo{
+    line-height: 1;
+    color: #ff0000;
+    width:95%;
+    height:50px;
+    text-align: center;
+    background:	rgb(251,228,210);
+    position: absolute;
+    margin-left: 30px;
+
+    margin-top: 10px;
+    border: 2px solid rgb(251,228,210);
+    border-radius: 2px;
+   
+}
+.content_table{
+    margin-top: 100px;
+    text-align: start;
+    margin-left: 200px;
+    margin-right: 200px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+
+}
+.content_table h3{
+    font-weight: bolder;
+
+}
+.content_table p{
+    font-weight: lighter;
+    font-size: larger;
+}
+.content_table ul li{
+    font-weight: lighter;
+    font-size: larger;
+    color:#000000;
+
+}
+
+/*local temples*/
+
+.local_temples{
+    color:rgb(0, 0, 0);
+    top:0px;
+    text-align: center;
+    background:#ffffff;
+    position: absolute;
+    width:100%;
+    height:60vh;
+    display: grid;
+    position: relative;
+    flex-shrink: 0; 
+    border-radius: 20px;
+
+    margin-top: 10px;
+    border: 2px solid #ffffff;
+}
+.local_temples img{
+    width:100%;
+    height:60vh;
+    border-radius: 20px;
+
+}
+.local_temples::before{
+    content: "";
+    position: absolute;
+    border-radius: 20px;
+    top:0;
+    width: 100%;
+    height: 60vh;
+    background: rgba(0, 0, 0, 0.489);
+}
+.temple_available{
+    width:100%;
+    height:50vh;
+    border-radius: 10px;
+}
+
+.local_temples h1{
+    color:#ffffff;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    position: absolute;
+    font-size: xx-large;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    bottom: 40px;
+    margin-left: 100px;
+    color: white;
+    border-radius: 5px;
+    
+    font-size: 2.2em;
+    justify-content: justify;
+
+
+}
+.local__temples{
+    position: absolute;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    bottom: 2px;
+    margin-left: 100px;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1.5em;
+}
+.hanuman_gadi{
+    display: flex;
+    align-items: center; 
+    padding: 20px;
+}
+.garhi{
+    max-width: 100%; 
+    height: 300px;
+    margin-right: 20px;
+    border-radius: 5px; 
+}
+.hanuman_garhi{
+    max-width: 1000px;
+    
+}
+.hanuman_garhi h2{
+    color:#ff6900
+
+}
+.hanuman_garhi p{
+    margin-right: 50px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.kanak{
+    display: flex;
+    align-items: center; 
+    padding: 20px;
+}
+.bhawan{
+    max-width: 100%; 
+    height: 300px;
+    margin-right: 20px;
+    border-radius: 5px; 
+}
+.kanak_bhawan{
+    max-width: 1000px;
+    
+}
+.kanak_bhawan h2{
+    color:#ff6900
+
+}
+.kanak_bhawan p{
+    margin-right: 50px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+.dashrath{
+    display: flex;
+    align-items: center; 
+    padding: 20px;
+}
+.mahal{
+    max-width: 100%; 
+    height: 300px;
+    margin-right: 20px;
+    border-radius: 5px; 
+}
+.dashrath_mahal{
+    max-width: 1000px;
+    
+}
+.dashrath_mahal h2{
+    color:#ff6900
+
+}
+.dashrath_mahal p{
+    margin-right: 50px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.main__{
+    display: flex;
+    align-items: center; 
+    padding: 20px;
+}
+.main___temple{
+    max-width: 400px; 
+    height: 300px;
+    margin-right: 20px;
+    border-radius: 5px; 
+}
+.Janmabhoomi__{
+    max-width: 1000px;
+    
+}
+.Janmabhoomi__ h2{
+    color:#ff6900
+
+}
+.Janmabhoomi__ p{
+    margin-right: 50px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.saryu{
+    display: flex;
+    align-items: center; 
+    padding: 20px;
+}
+.ghat_{
+width: 400px;
+    height: 300px;
+    margin-right: 20px;
+    border-radius: 5px; 
+}
+.saryu_ghat{
+    max-width: 1000px;
+    
+}
+.saryu_ghat h2{
+    color:#ff6900
+
+}
+.saryu_ghat p{
+    margin-right: 50px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.naya{
+    display: flex;
+    align-items: center; 
+    padding: 20px;
+}
+.naya_ghat{
+    max-width: 100%; 
+    height: 300px;
+    margin-right: 20px;
+    border-radius: 5px; 
+}
+.nayaghat{
+    max-width: 1000px;
+    
+}
+.nayaghat h2{
+    color:#ff6900
+
+}
+.nayaghat p{
+    margin-right: 50px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.guptar{
+    display: flex;
+    align-items: center; 
+    padding: 20px;
+}
+.guptar_ghat{
+    max-width: 100%; 
+    height: 300px;
+    margin-right: 20px;
+    border-radius: 5px; 
+}
+.guptarghat{
+    max-width: 1000px;
+    
+}
+.guptarghat h2{
+    color:#ff6900
+
+}
+.guptarghat p{
+    margin-right: 50px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.sita{
+    display: flex;
+    align-items: center; 
+    padding: 20px;
+}
+.rasoi{
+    max-width: 100%; 
+    height: 300px;
+    margin-right: 20px;
+    border-radius: 5px; 
+}
+.Sita_Ki_Rasoi{
+    max-width: 1000px;
+    
+}
+.Sita_Ki_Rasoi h2{
+    color:#ff6900
+
+}
+.Sita_Ki_Rasoi p{
+    margin-right: 50px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.ram_ki{
+    display: flex;
+    align-items: center; 
+    padding: 20px;
+}
+.paidi{
+    width: 400px; 
+    height: 300px;
+    margin-right: 20px;
+    border-radius: 5px; 
+}
+.ram_ki_paidi{
+    max-width: 1000px;
+    
+}
+.ram_ki_paidi h2{
+    color:#ff6900
+
+}
+.ram_ki_paidi p{
+    margin-right: 50px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.lata{
+    display: flex;
+    align-items: center; 
+    padding: 20px;
+}
+.mangeshkar{
+    max-width: 100%; 
+    height: 300px;
+    margin-right: 20px;
+    border-radius: 5px; 
+}
+.chowk{
+    max-width: 1000px;
+    
+}
+.chowk h2{
+    color:#ff6900
+
+}
+.chowk p{
+    margin-right: 50px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/*others*/
+
+.night { 
+    color:rgb(0, 0, 0);
+    top:0px;
+    text-align: center;
+    background:#ffffff;
+    position: absolute;
+    width:100%;
+    height:60vh;
+    display: grid;
+    position: relative;
+    flex-shrink: 0; 
+    border-radius: 20px;
+
+    margin-top: 10px;
+    border: 2px solid #ffffff; 
+
+}
+.night img{
+    width:100%;
+    height:60vh;
+    border-radius: 20px;
+
+}
+.night::before{
+    content: "";
+    position: absolute;
+    border-radius: 20px;
+    top:0;
+    width: 100%;
+    height: 60vh;
+    background: rgba(0, 0, 0, 0.489);
+
+}
+.night_time_temples{
+    line-height: 1;
+    color: #ffffff;
+    width:95%;
+    height:50px;
+    text-align: center;
+    background:	rgb(0, 0, 0);
+    position: absolute;
+    margin-left: 30px;
+
+    margin-top: 10px;
+    border: 2px solid rgb(251,228,210);
+    border-radius: 2px;
+   
+}
+.content__table{
+    margin-top: 100px;
+    text-align: start;
+    margin-left: 200px;
+    margin-right: 200px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+
+}
+.content__table h3{
+    font-weight: bolder;
+
+}
+.content__table p{
+    font-weight: lighter;
+    font-size: larger;
+}
+.content__table ul li{
+    font-weight: lighter;
+    font-size: larger;
+    color:#000000;
+
+}
+
+/*login*/
+
+.bg_image {
+    background-image: linear-gradient(0deg,rgba(184,226,252,0.655),rgba(184,226,252,0.655)),url(images/20.jpg) ;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+.login-container {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px 40px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+
+}
+
+.login-container h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+
+
+
+
+/*footer*/
+footer {
+    background-color: #a27fbd;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.footer-container > div {
+    flex: 1;
+    margin: 10px;
+    min-width: 200px;
+}
+
+.footer-about p, .footer-contact p, .footer-links ul {
+    color: #ffffff;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding-left: 150px;
+}
+
+.footer-links li {
+    margin: 5px 0;
+}
+
+.footer-links a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.social-media a {
+    color: #ffffff;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.social-media a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+}
+
+.footer-bottom p {
+    margin: 0;
+    color: #ffffff;
+}
+
+.footer-bottom p {
+    line-height: 5;
+    color: #ffffff;
+    width:100%;
+    height:80px;
+    text-align: center;
+    background:#0b0f11;
+    position: absolute;
+   
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
